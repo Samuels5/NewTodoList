@@ -1,9 +1,6 @@
-
-
 let input = <HTMLInputElement>document.getElementById('input')
 let butt = document.getElementById('button')
 let ol = document.getElementById('ol')
-
 
 const add = () => {
     let li = document.createElement('li');
