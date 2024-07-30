@@ -21,6 +21,8 @@ var add = function () {
     div1.appendChild(deletButton);
     div2.appendChild(li);
     div2.appendChild(div1);
-    ol === null || ol === void 0 ? void 0 : ol.appendChild(div2);
+    if (input.value.length > 0) {
+        ol === null || ol === void 0 ? void 0 : ol.appendChild(div2);
+    }
     input.value = '';
 };

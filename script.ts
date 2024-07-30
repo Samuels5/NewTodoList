@@ -1,9 +1,6 @@
-
-
 let input = <HTMLInputElement>document.getElementById('input')
 let butt = document.getElementById('button')
 let ol = document.getElementById('ol')
-
 
 const add = () => {
     let li = document.createElement('li');
@@ -27,6 +24,7 @@ const add = () => {
     div1.appendChild(deletButton);
     div2.appendChild(li);
     div2.appendChild(div1);
-    ol?.appendChild(div2);
+    if (input.value.length > 0){
+    ol?.appendChild(div2);}
     input.value = '';
 }
