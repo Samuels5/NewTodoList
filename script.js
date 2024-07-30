@@ -1,6 +1,7 @@
 var input = document.getElementById('input');
 var butt = document.getElementById('button');
 var ol = document.getElementById('ol');
+
 var add = function () {
     var li = document.createElement('li');
     li.textContent = input.value;
