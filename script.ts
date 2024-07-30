@@ -10,6 +10,7 @@ const add = () => {
     li.textContent = input.value;
     let editButton = document.createElement('button');
     editButton.textContent = 'edit';
+    editButton.className = 'edit';
     editButton.onclick = () => {
         let val = prompt('edit it ', li?.textContent!);
         li.textContent = val;
@@ -17,6 +18,7 @@ const add = () => {
 
     let deletButton = document.createElement('button');
     deletButton.textContent = 'delete';
+    deletButton.className = 'delete';
     deletButton.onclick = function() {deletButton?.parentNode?.parentNode?.parentNode?.removeChild(div2)};
     let div1 = document.createElement('div');
     let div2 = document.createElement('div');
